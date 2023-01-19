@@ -1,13 +1,42 @@
-@import "_var";
+@import "_var.scss";
 
-*{
-    box-sizing: border-box;
+body {
+  font-family: sans-serif;
+  color: $text-color;
+}
+
+h1, h2, h3, h4 {
+  
+}
+
+p {
+  
+}
+
+a {
 
 }
 
-body{
-    font-family: sans-serif;
-    background-color: $tomato;
+#header {
+    height: $header-hieght;
+  #main-menu {
+
+  }
+  
+  #logo {
+
+  }
 }
- 
-@import "_header";
+
+#main {
+
+  #content {
+  }
+
+  #sidebar {
+  }
+}
+
+#footer {
+
+}
