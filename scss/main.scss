@@ -1,42 +1,75 @@
 @import "_var.scss";
+@import "_mixin";
+
+@include fancy-links;
+@include google-font("Alegraya+Sans");
+@include google-font("Titillium+Web");
 
 body {
-  font-family: sans-serif;
-  color: $text-color;
+    font-family: sans-serif;
+    color: $text-color;
 }
 
-h1, h2, h3, h4 {
-  
+h1,
+h2,
+h3,
+h4 {
+    font-family: $headline-font;
+}
+
+h2 {
+    @include large-text;
 }
 
 p {
-  
+    font-family: $text-font;
 }
 
 a {
+    color: $link-color;
+}
 
+.warning-button {
+    @include warning;
+    padding: 8px 12px;
 }
 
 #header {
+
+    background-color: $theme-color;
+    @include box-shadow(2px 0px 4px #aaa,10px 3px 1px #233f23a6);
+    @include box(6px, 1px solid black);
     height: $header-hieght;
-  #main-menu {
+    #main-menu {
+        ul{
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+        li{
+            color:$menu-item-color;
+        }
+    }
 
-  }
-  
-  #logo {
-
-  }
+    #logo {
+    }
 }
 
 #main {
+    margin: auto;
+    #content {
+        margin: auto;
+        width: $content-width;
+       
+    }
 
-  #content {
-  }
-
-  #sidebar {
-  }
+    #sidebar {
+        ul{
+            margin: auto;
+        }
+    }
 }
 
 #footer {
-
 }

@@ -1,8 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Alegraya+Sans);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+a {
+  font-style: italic;
+  text-decoration: none;
+}
+
 body {
   font-family: sans-serif;
   color: #222222;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Tiltilium Web", Georgia, serif;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+p {
+  font-family: Vardana, "Alegraya Sans", Arial, sans-serif;
+}
+
+a {
+  color: #f27731;
+}
+
+.warning-button {
+  background-color: orange;
+  color: #fff;
+  padding: 8px 12px;
+}
+
 #header {
+  background-color: #170a48;
+  box-shadow: 2px 0px 4px #aaa, 10px 3px 1px rgba(35, 63, 35, 0.6509803922);
+  -mox-box-shadow: 2px 0px 4px #aaa, 10px 3px 1px rgba(35, 63, 35, 0.6509803922);
+  -webkit-box-shadow: 2px 0px 4px #aaa, 10px 3px 1px rgba(35, 63, 35, 0.6509803922);
+  border-radius: 6px #333;
+  border: 1px solid black;
   height: 60px;
+}
+#header #main-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+#header #main-menu li {
+  color: white;
+}
+#main {
+  margin: auto;
+}
+#main #content {
+  margin: auto;
+  width: 960px;
+}
+#main #sidebar ul {
+  margin: auto;
 }
