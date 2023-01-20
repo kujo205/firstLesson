@@ -8,6 +8,13 @@
 body {
     font-family: sans-serif;
     color: $text-color;
+
+    @include large-screens{
+        font-size: 125%;
+    }
+
+
+
 }
 
 h1,
@@ -58,9 +65,14 @@ a {
 
 #main {
     margin: auto;
+    width: $content-width;
+    @include large-screens{
+        width: auto;
+        max-width: $content-width;
+    }
     #content {
         margin: auto;
-        width: $content-width;
+       
        
     }
 
@@ -72,4 +84,6 @@ a {
 }
 
 #footer {
+    background-color: $ternary-color;
+    height: $footer-height;
 }
