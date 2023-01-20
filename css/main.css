@@ -34,11 +34,17 @@ p {
 a {
   color: #f27731;
 }
+a:hover {
+  color: #ca510d;
+}
 
 .warning-button {
   background-color: orange;
   color: #fff;
   padding: 8px 12px;
+}
+.warning-button:hover {
+  background-color: #ffc966;
 }
 
 #header {
@@ -49,6 +55,16 @@ a {
   border-radius: 6px #333;
   border: 1px solid black;
   height: 60px;
+}
+#header #main-menu a {
+  padding: 6px 8px;
+  border-bottom: 1px solid rgba(239, 239, 239, 0);
+  -webkit-transition: border-bottom 0.5s ease-in-out;
+  transition: border-bottom 0.5s ease-in-out;
+  background-color: #170a48;
+}
+#header #main-menu a:hover {
+  border-bottom: 1px solid #efefef;
 }
 #header #main-menu ul {
   display: -webkit-box;
